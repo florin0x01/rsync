@@ -1,0 +1,8 @@
+*** README ****
+
+This script synchronizes the file contents of two directories and then
+does a verification step by calculating the md5 on the remote side in a file called md5sums.txt
+
+The md5sums.txt must already exist on the src (source) side.
+
+
