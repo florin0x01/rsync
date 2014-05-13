@@ -12,7 +12,7 @@ CURTIME="$(date +%s)"
 
 LOG_FILE=~/logs/$(date +%Y%m%d_%R).txt
 
-rsync -avz -delete --bwlimit=30 --delete-before $1 $2 > $LOG_FILE
+rsync -avz -delete --bwlimit=3072 --delete-before $1 $2 > $LOG_FILE
 
 cd $2
 md5sum --tag * | sort > ~/md5sum_local.txt
